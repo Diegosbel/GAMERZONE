@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.titulo {
+    padding: 20px;
+  }
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+.btnContador {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgb(0, 121, 255);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btnContador:hover {
+    background-color: rgb(70%, 0%, 30%);
+}
