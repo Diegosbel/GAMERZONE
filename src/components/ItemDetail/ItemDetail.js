@@ -1,4 +1,3 @@
-import "./ItemDetail.css"
 import ItemCount from "../ItemCount/ItemCount";
 
 

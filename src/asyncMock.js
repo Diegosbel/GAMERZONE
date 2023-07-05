@@ -36,7 +36,7 @@ const productos = [
         descripcion: "FIFA es el videojuego de fútbol más vendido de la actualidad y con más de 25 años de desarrollo. Vas a poder jugar con tus equipos y futbolistas preferidos en diversos modos. ¡Preparate para convertirte en campeón de todas las copas y torneos!"
     }, {
         id: "5",
-        nombre: "Spider-man: Miles Morales",
+        nombre: "Spider-man",
         imagen: "/img/spiderman.png",
         precio: "27.999",
         categoria: "juegos",

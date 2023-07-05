@@ -1,11 +1,12 @@
 import Item from "../Item/Item";
+import "./ItemList.css"
 
 
 function ItemList ({productos}) {
 
     return (
 
-        <div>
+        <div className="productos">
             {productos.map(prod => <Item key={prod.id} {...prod} />)}
         </div>
     )

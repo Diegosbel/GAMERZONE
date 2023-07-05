@@ -6,11 +6,13 @@
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items: center;
+    margin-top: 2%;
 }
 
 .card img {
     width: 100%;
     border-radius: 5px 5px 0 0;
+    object-fit: cover;
 }
 
 
