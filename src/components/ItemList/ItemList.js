@@ -2,7 +2,7 @@ import Item from "../Item/Item";
 import "./ItemList.css"
 
 
-function ItemList ({productos}) {
+const ItemList = ({productos}) => {
 
     return (
 

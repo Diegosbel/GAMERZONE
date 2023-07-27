@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-function Item({ id, nombre, imagen, precio, stock }) {
+const Item = ({ id, nombre, imagen, precio, stock }) => {
 
     return (
         <article className="card">
