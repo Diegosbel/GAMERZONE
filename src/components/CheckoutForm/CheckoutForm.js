@@ -20,6 +20,7 @@ const CheckoutForm = ({ onConfirm }) => {
                 <label>
                     Nombre
                     <input
+                        required
                         type='text'
                         value={name}
                         onChange={({ target }) => setName(target.value)}
@@ -28,6 +29,7 @@ const CheckoutForm = ({ onConfirm }) => {
                 <label>
                     Telefono
                     <input
+                        required
                         type='text'
                         value={phone}
                         onChange={({ target }) => setPhone(target.value)}
@@ -36,7 +38,8 @@ const CheckoutForm = ({ onConfirm }) => {
                 <label>
                     Email
                     <input
-                        type='text'
+                        required
+                        type='email'
                         value={email}
                         onChange={({ target }) => setEmail(target.value)}
                     />

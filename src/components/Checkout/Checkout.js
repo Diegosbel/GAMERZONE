@@ -9,7 +9,7 @@ import "./Checkout.css"
 const Checkout = () => {
     const [loading, setLoading] = useState(false)
     const [orderId, setOrderId] = useState('')
-    const { cart, total, clearCart } = useContext(CartContext)
+    const { cart, clearCart } = useContext(CartContext)
 
     const createOrder = async ({ name, phone, email }) => {
         setLoading(true)
@@ -20,7 +20,6 @@ const Checkout = () => {
                     name, phone, email
                 },
                 items: cart,
-                total: total,
                 date: Timestamp.fromDate(new Date())
             }
             const batch = writeBatch(db)
@@ -61,16 +60,16 @@ const Checkout = () => {
     }
 
     if (loading) {
-        return <h1>Se esta generando su orden...</h1>
+        return <h1 className="compra_finalizada">Se esta generando su orden...</h1>
     }
 
     if (orderId) {
-        return <h1 className="compra_finalizada">El id de su orden es: {orderId}</h1>
+        return <h1 className="compra_finalizada">El id de su orden es: {orderId} <br/> Le agradecemos por su compra</h1>
     }
 
     return (
         <div className="checkout">
-            <h1 >Ingresa tus datos para finalizar</h1>
+            <h1 >Ingresa tus datos para finalizar</h1> 
             <CheckoutForm onConfirm={createOrder} />
         </div>
     )
