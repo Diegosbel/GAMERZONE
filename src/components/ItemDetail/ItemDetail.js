@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import { Link } from "react-router-dom";
-
+import "./ItemDetails.css"
 import { CartContext } from "../../context/CartContext";
 
 const ItemDetail =({ id, nombre, imagen, descripcion, precio, stock }) => {
@@ -22,27 +22,27 @@ const ItemDetail =({ id, nombre, imagen, descripcion, precio, stock }) => {
     }
 
     return (
-        <article className="card">
+        <article className="card_detail">
             <header className="titulo">
                 <h2>
                     {nombre}
                 </h2>
             </header>
             <picture>
-                <img src={imagen} className="imgCard" alt={nombre} />
+                <img src={imagen} className="img_detail" alt={nombre} />
             </picture>
             <section>
-                <p className="descripcion">
+                <p className="descripcion_detail">
                     Descripcion: {descripcion}
                 </p>
-                <p className="descripcion">
+                <p className="descripcion_detail">
                     Precio: ${precio}
                 </p>
             </section>
-            <footer>
+            <footer >
                 {
                     quantityaAdded > 0 ? (
-                        <Link to={"/cart"} >Terminar compra</Link>
+                        <Link to={"/cart"} className="btnFooter" >Terminar compra</Link>
                     ) : (
                         <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
                     )

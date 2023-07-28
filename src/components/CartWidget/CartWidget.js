@@ -1,8 +1,8 @@
 import { useContext } from "react"
-import cart from "./assets/371979.svg"
 import "./CartWidget.css"
 import { CartContext } from "../../context/CartContext"
 import { Link } from "react-router-dom"
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 const CartWidget =()=> {
 
@@ -12,7 +12,7 @@ const CartWidget =()=> {
     return (
         <div className="carroCompra">
             <Link to="/cart" >
-                <img src={cart} alt="Carro compras"/>
+                <AiOutlineShoppingCart className="carrito"/>
                 {totalQuantity()}
             </Link>
 

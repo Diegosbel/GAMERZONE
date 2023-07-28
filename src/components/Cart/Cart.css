@@ -1,0 +1,35 @@
+.cart_final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    gap: 10px;
+}
+
+.btn_limpiar{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: lightcoral;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn_limpiar:hover{
+    background-color: red;
+}
+
+
+.btn_check{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgb(98, 187, 2);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn_check:hover{
+    background-color: green;
+}

@@ -48,8 +48,6 @@ getDocs(collectionRef)
     return (
 
         <div className="navegacion">
-            <h1>{greeting}</h1>
-            <h2>Hola</h2>
             <ItemList productos= {productos}/>
         </div>
     )

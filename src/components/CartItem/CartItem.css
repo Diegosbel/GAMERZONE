@@ -1,3 +1,26 @@
-.cart-carro{
+.cart_carro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 133px;
+    margin: 40px;
+    font-size: 30px;
+}
+
+
+.carro_descripcion{
+    font-size: 15px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: lightcoral;
     color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: red;
 }

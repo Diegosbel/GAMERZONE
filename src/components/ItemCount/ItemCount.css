@@ -1,7 +1,7 @@
 .counter {
     display: flex;
-flex-direction: row;
-justify-content: center;
+    flex-direction: row;
+    justify-content: center;
     background-color: #f1f1f1;
     border-radius: 5px;
     padding: 10px;
@@ -14,7 +14,7 @@ justify-content: center;
 }
 
 .counter button {
-    background: linear-gradient( 90deg,rgb(70%, 0%, 30%), rgb(0, 121, 255));
+    background: burlywood;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -25,5 +25,5 @@ justify-content: center;
 }
 
 .counter button:hover {
-    background-color: #45a049;
+    background-color: rgb(179, 87, 0);
 }

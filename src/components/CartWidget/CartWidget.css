@@ -4,11 +4,15 @@
 .carroCompra {
     width: 250px;
     height: 10vh;
-    background-color: #fec53a;
     color: #000;
     outline: none;
     border: none;
     text-align: right;
-    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
     padding-right: 40px;
+}
+
+.carrito{
+    font-size: 35px;
+    color: rgb(119, 78, 2);
+    margin-top: 10px;
 }

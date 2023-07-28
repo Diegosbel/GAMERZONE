@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 220px;
-    background-color: #f1f1f1;
+    background-color: cadetblue;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items: center;
@@ -26,8 +26,8 @@ h2 {
 }
 
 .descripcion {
-    font-size: 14px;
-    color: #777;
+    font-size: 18px;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -35,12 +35,12 @@ h2 {
 .btnContador {
     display: inline-block;
     padding: 8px 16px;
-    background-color: rgb(0, 121, 255);
+    background-color: burlywood;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .btnContador:hover {
-    background-color: rgb(70%, 0%, 30%);
+    background-color: rgb(179, 87, 0);
 }

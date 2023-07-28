@@ -11,7 +11,6 @@ function NavBar() {
                     <Link to={"/"} className="lista">Inicio</Link>
                     <Link to={"/categoria/consolas"} className="lista">Consolas</Link>
                     <Link to={"/categoria/juegos"} className="lista">Juegos</Link>
-                    <Link to={"/Categoria/contacto"} className="lista">Contacto</Link>
                 </div>
                 <CartWidget />
             </div>
