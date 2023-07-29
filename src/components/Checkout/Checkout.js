@@ -50,7 +50,7 @@ const Checkout = () => {
                 setOrderId(orderAdded.id)
                 clearCart()
             } else {
-                console.error('Hay productos que estan fuera de stock')
+                return alert("Producto fuera de stock")
             }
         } finally {
             setLoading(false)

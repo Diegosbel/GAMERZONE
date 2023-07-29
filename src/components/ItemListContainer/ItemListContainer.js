@@ -8,7 +8,7 @@ import { db } from "../../config/firebaseConfig"
 
 
 
-const ItemListContainer =({ greeting }) => {
+const ItemListContainer =() => {
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)

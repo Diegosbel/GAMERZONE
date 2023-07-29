@@ -11,7 +11,7 @@ export const CartContext = createContext({
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([])
 
-    console.log(cart);
+
 
 
     const addItem = (productos, quantity) => {
@@ -19,7 +19,7 @@ export const CartProvider = ({ children }) => {
             setCart(prev => [...prev, { ...productos, quantity }])
 
         } else {
-            console.error('Producto ya agregado')
+            alert("Producto ya fue agregado ")
         }
     }
 
