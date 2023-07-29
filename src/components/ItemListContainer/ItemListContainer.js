@@ -31,9 +31,6 @@ getDocs(collectionRef)
     })
     setProductos(productsAdapted)
 })
-.catch(error => {
-    console.log (error)
-})
 .finally(()=> {
     setLoading(false)
 })

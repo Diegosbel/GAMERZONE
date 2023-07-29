@@ -52,8 +52,6 @@ const Checkout = () => {
             } else {
                 console.error('Hay productos que estan fuera de stock')
             }
-        } catch (error) {
-            console.log(error)
         } finally {
             setLoading(false)
         }
